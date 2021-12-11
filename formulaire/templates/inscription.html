@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %} Inscription{% endblock title %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <h2>Inscription Socialisation</h2>
+        <form method="POST" enctype="multipart/form-data" class="my_form">
+            {% csrf_token %}
+            {% for field in user_form %}
+            <div class="margin5 ">
+                {{field.label}} <br>{{field}}<br>
+            </div>
+
+            {% endfor %}
+                <button class="btn btn-primary form-control" type="submit">Sign In</button>
+        </form>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
+
+
+{% endblock content %}

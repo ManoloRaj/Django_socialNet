@@ -1,0 +1,10 @@
+.margin5{
+    margin: 10px;
+}
+.my_form input{
+    width: 100%;
+}
+.my_form textarea{
+    width: 100%;
+    height: 10%;
+}
